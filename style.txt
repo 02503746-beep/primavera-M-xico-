@@ -1,0 +1,145 @@
+/* RESET */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+/* BODY */
+body{
+  font-family:'Trebuchet MS', sans-serif;
+
+  background-image:
+  linear-gradient(rgba(255,255,255,0.3), rgba(255,255,255,0.3)),
+  url('https://images.unsplash.com/photo-1520763185298-1b434c919102?q=80&w=1400&auto=format&fit=crop');
+
+  background-size:cover;
+  background-position:center;
+  background-attachment:fixed;
+
+  color:#333;
+}
+
+/* HEADER */
+header{
+  text-align:center;
+  padding:40px 20px;
+
+  background:rgba(255,255,255,0.8);
+  backdrop-filter:blur(5px);
+}
+
+header h1{
+  font-size:4rem;
+  color:#ff1493;
+  text-shadow:2px 2px 5px rgba(0,0,0,0.2);
+  margin-bottom:10px;
+}
+
+.subtitulo{
+  font-size:1.2rem;
+  color:#2d6a4f;
+  margin-bottom:25px;
+}
+
+/* NAV */
+nav{
+  display:flex;
+  justify-content:center;
+  gap:20px;
+  flex-wrap:wrap;
+}
+
+nav a{
+  text-decoration:none;
+  background:#ffb703;
+  color:white;
+  padding:12px 20px;
+  border-radius:30px;
+  font-weight:bold;
+  transition:0.3s;
+}
+
+nav a:hover{
+  background:#fb8500;
+  transform:scale(1.08);
+}
+
+/* MAIN */
+main{
+  padding:50px 30px;
+}
+
+/* FLEX */
+.flex-container{
+  display:flex;
+  justify-content:space-between;
+  gap:20px;
+  flex-wrap:wrap;
+}
+
+/* ARTICLES */
+article{
+  flex:1;
+  min-width:200px;
+
+  background:rgba(255,255,255,0.9);
+
+  padding:20px;
+  border-radius:20px;
+
+  box-shadow:0 8px 20px rgba(0,0,0,0.2);
+
+  transition:0.4s;
+}
+
+article:hover{
+  transform:translateY(-10px) scale(1.02);
+}
+
+/* IMAGES */
+article img{
+  width:100%;
+  height:240px;
+  object-fit:cover;
+  border-radius:20px;
+  margin-bottom:15px;
+}
+
+/* TITLES */
+article h2{
+  color:#c1121f;
+  margin-bottom:15px;
+  font-size:1.8rem;
+}
+
+/* TEXT */
+article p{
+  line-height:1.7;
+  color:#444;
+}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:25px;
+
+  background:rgba(255,20,147,0.85);
+
+  color:white;
+  font-size:1.1rem;
+  font-weight:bold;
+}
+
+/* RESPONSIVE */
+@media(max-width:600px){
+
+  header h1{
+    font-size:2.5rem;
+  }
+
+  .flex-container{
+    flex-direction:column;
+  }
+
+}
